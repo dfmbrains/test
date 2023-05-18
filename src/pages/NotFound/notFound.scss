@@ -1,0 +1,65 @@
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+
+  div {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  img {
+    width: 180px;
+    display: block;
+    margin: 0 auto 55px;
+  }
+
+  h5 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+  }
+
+  .button {
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .notFound {
+    .button {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .notFound {
+    div {
+      width: 100%;
+    }
+
+    img {
+      width: 150px;
+      margin: 0 auto 45px;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+
+    .button {
+      width: 75%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

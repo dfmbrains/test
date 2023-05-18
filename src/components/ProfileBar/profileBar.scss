@@ -1,0 +1,14 @@
+.profileBar {
+  margin-top: -88px;
+  padding-top: calc(88px + 9px);
+  padding-bottom: 18px;
+  background: linear-gradient(133.85deg, #FFFFFF 5%, #C7D5E0 118.05%);
+}
+
+@media (max-width: 576px) {
+  .profileBar {
+    padding-top: 88px;
+    padding-bottom: 16px;
+    background: #FFFFFF;
+  }
+}

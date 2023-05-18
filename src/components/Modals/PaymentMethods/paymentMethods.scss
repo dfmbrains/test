@@ -1,0 +1,100 @@
+.paymentMethods {
+  &__view {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    height: 260px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 30px;
+
+    &_item {
+      border: 1px solid;
+      border-radius: 14px;
+      padding: 0 20px;
+      height: 56px;
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      position: relative;
+
+      &-active {
+        border-color: #FD385B;
+      }
+
+      &-disabled {
+        border-color: var(--border-color-light);
+      }
+
+      &-delete {
+        position: absolute;
+        right: 8px;
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        transition: 0.1s;
+
+        &:hover {
+          color: var(--primary-color);
+          background: var(--primary-light-color);
+          transition: 0.1s;
+        }
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      h5 {
+        font-weight: 500;
+      }
+
+      span, p {
+        color: var(--secondary-light-color);
+      }
+
+      p {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__add {
+    &_form {
+      border: 1px solid var(--border-color-light);
+      border-radius: 14px;
+      padding: 16px 12px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+
+      h6 {
+        color: var(--border-color-light);
+        font-weight: 500;
+        user-select: none;
+      }
+
+      &-row {
+        display: flex;
+        column-gap: 16px;
+
+        &-item {
+          width: calc(100% / 2 - 8px);
+
+          .TextFieldLabel {
+            min-width: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

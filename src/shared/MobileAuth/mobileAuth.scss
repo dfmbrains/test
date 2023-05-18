@@ -1,0 +1,44 @@
+@media (max-width: 996px) {
+  .mobileAuth {
+    height: calc(100vh - var(--header-height) - var(--bottom-bar-height-laptop));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    form {
+      width: 50%;
+    }
+
+    br {
+      display: none
+    }
+
+    .authModal {
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileAuth {
+    height: calc(100vh - var(--header-height) - var(--bottom-bar-height-tablet));
+
+    form {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mobileAuth {
+    height: calc(100vh - var(--header-height) - var(--bottom-bar-height-mobile));
+
+    form {
+      width: 100%;
+    }
+
+    br {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #FD385B;
+  --primary-dark-color: #d00024;
+  --primary-light-color: #fdeeee;
+  --primary-contrast-color: #FFFFFF;
+  --secondary-color: #12175D;
+  //--secondary-dark-color: #12175D;
+  --secondary-light-color: #9AA8C7;
+  --border-color-light: #E5EBFF;
+  --box-shadow-type1: -3px 7px 13px #F1F7FF;
+  --header-height: 88px;
+  --profile-bar-height: 189px;
+  --bottom-bar-height-mobile: 77.6px;
+  --bottom-bar-height-tablet: 69.6px;
+  --bottom-bar-height-laptop: 55.6px;
+}
+
+.typography-h1 {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+  color: var(--secondary-color);
+}
+
+.typography-h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--secondary-color);
+}
+
+.typography-h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--secondary-color);
+}
+
+.typography-h4 {
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--secondary-color);
+}
+
+.typography-h5 {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--secondary-color);
+}
+
+.typography-h6 {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+}
+
+.typography-subtitle1 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.typography-subtitle2 {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.typography-body1 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.typography-body2 {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.secondary-light {
+  color: var(--secondary-light-color);
+}
+
+
+@media (max-width: 1260px) {
+  .typography-h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .typography-h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .typography-h4 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .typography-h5 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 996px) {
+  .typography-h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .typography-h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .typography-subtitle2 {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .typography-body1 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .typography-h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .typography-h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .typography-h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

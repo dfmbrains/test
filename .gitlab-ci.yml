@@ -1,0 +1,42 @@
+build-dev:
+  stage: build
+  only:
+    - dev
+  tags: 
+    - autodevops
+  script:
+    - echo "Running dev build"
+    - yarn install 
+    - CI=false && yarn build-dev --production
+    - 'sudo rm -rf /var/www/webproject-dev'
+    - 'sudo cp -r build /var/www/webproject-dev'
+    - 'sudo systemctl restart nginx'
+
+build-stage:
+  stage: build
+  only:
+    - stage
+  tags: 
+    - autodevops
+  script:
+    - echo "Running stage build"
+    - yarn install 
+    - CI=false && yarn build-stage --production
+    - 'sudo rm -rf /var/www/webproject-stage'
+    - 'sudo cp -r build /var/www/webproject-stage'
+    - 'sudo systemctl restart nginx'
+
+build-main:
+  stage: build
+  only:
+    - main
+  tags: 
+    - autodevops
+  script:
+    - echo "Running stage build"
+    - yarn install 
+    - CI=false && yarn build-prod --production
+    - 'sudo rm -rf /var/www/webproject-prod'
+    - 'sudo cp -r build /var/www/webproject-prod'
+    - 'sudo systemctl restart nginx'
+    

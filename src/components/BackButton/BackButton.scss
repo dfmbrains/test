@@ -1,0 +1,14 @@
+.BackButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+
+  img {
+    margin-right: 12px;
+  }
+}

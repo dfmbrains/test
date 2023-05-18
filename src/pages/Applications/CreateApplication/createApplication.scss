@@ -1,0 +1,353 @@
+.createApplication {
+  &__waiting {
+    height: calc(100vh - var(--header-height));
+    margin: 0 auto;
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_img {
+      width: 90px;
+    }
+
+    h3 {
+      margin: 48px 0 16px;
+      text-align: center;
+      color: #12175D;
+      font-size: 24px !important;
+      line-height: 28px !important;
+    }
+
+    h4 {
+      font-weight: 400;
+      text-align: center;
+      color: #9AA8C7;
+    }
+
+    &_link {
+      padding: 10px 0 11px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 29px;
+      margin: 24px 0 36px;
+    }
+
+    .downloadButtons {
+      margin: 0 0 28px;
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      width: 100%;
+
+      a {
+        width: calc(50% - 8px);
+      }
+    }
+
+    &_qr {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 16px;
+
+      &-img {
+        width: calc(100% / 3 - 16px * 2 / 3);
+      }
+
+      &-scan {
+        width: calc(100% / 5);
+      }
+
+      h5 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        color: #12175D;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 100%;
+        color: #12175D;
+      }
+    }
+  }
+
+  &__row {
+    margin-top: 21px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 50px;
+    padding-bottom: 50px;
+
+    &_title {
+      margin-top: 8px;
+    }
+  }
+
+  &__form {
+    width: calc(100% / 3);
+
+    h4 {
+      margin-bottom: 16px;
+    }
+
+    .profileEditForm {
+      flex-direction: column;
+      gap: 16px;
+
+      &__label {
+        margin-top: 0;
+      }
+    }
+
+    &_documents {
+      display: flex;
+      column-gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    &_submit {
+      margin-top: 24px;
+    }
+  }
+}
+
+.applicationMainForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 16px;
+}
+
+.applicationUploadDocument {
+  border: 1px solid var(--border-color-light);
+  border-radius: 14px;
+  height: 100px;
+  width: calc(50% - 5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__active {
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: var(--box-shadow-type1);
+      transition: 0.2s;
+    }
+  }
+
+  h5 {
+    text-align: center;
+    margin: 10px 0 0;
+    user-select: none;
+    font-weight: 400;
+    opacity: 0.4;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  img {
+    width: 30px;
+    height: 28px;
+    border-radius: 4px;
+  }
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.createApplicationChooseRole {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - var(--header-height));
+  padding-bottom: var(--bottom-bar-height-mobile);
+
+  .BackButton {
+    align-self: flex-start;
+  }
+
+  &__box {
+    h2 {
+      text-align: center;
+      margin: 32px 0 12px;
+      padding: 0 20px;
+    }
+
+    &_text {
+      text-align: center;
+      color: var(--secondary-light-color);
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.createApplicationNurse {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+
+  &__img {
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+
+  &__box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 16px 24px 24px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #D7E2FF;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    &_img {
+      background: #FBC815;
+      box-shadow: 0 46px 80px rgba(0, 0, 0, 0.07), 0 19.2177px 33.4221px rgba(0, 0, 0, 0.0503198), 0 10.2747px 17.869px rgba(0, 0, 0, 0.0417275), 0 5.75991px 10.0172px rgba(0, 0, 0, 0.035), 0 3.05905px 5.32008px rgba(0, 0, 0, 0.0282725), 0 1.27294px 2.21381px rgba(0, 0, 0, 0.0196802);
+      border-radius: 16px;
+      width: 75px;
+      min-width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 90%;
+        min-width: 80%;
+        max-height: 75%;
+        min-height: 50%;
+      }
+    }
+
+    p {
+      flex: auto;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .createApplication {
+    &__form {
+      width: calc(50% - 25px);
+
+      .profileEditForm {
+        &__label {
+          width: 100%;
+        }
+      }
+    }
+
+    &__waiting {
+      width: calc(100% / 3);
+
+      &_img {
+        width: 70px;
+      }
+
+      h3 {
+        margin: 32px 0 16px;
+      }
+
+      &_link {
+        padding: 14px 0 15px;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 16px 0 24px;
+      }
+
+      .downloadButtons {
+        margin: 0 0 16px;
+        column-gap: 16px;
+      }
+
+      &_qr {
+        h5 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .createApplication {
+    &__back {
+      margin-bottom: 16px;
+    }
+
+    &__row {
+      &_title {
+        margin: 0;
+      }
+    }
+
+    &__waiting {
+      width: calc(100% / 2);
+    }
+
+    &__row {
+      column-gap: 25px;
+    }
+
+    &__form {
+      width: calc(50% - 12.5px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .createApplication {
+    &__row {
+      flex-direction: column;
+      gap: 24px 0;
+    }
+
+    &__form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .createApplication {
+    &__waiting {
+      width: calc(100% - 50px);
+
+      .downloadButtons, &_qr {
+        display: none;
+      }
+
+      &_link {
+        margin-top: 50px;
+      }
+    }
+  }
+}

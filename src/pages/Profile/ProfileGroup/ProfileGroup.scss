@@ -1,0 +1,100 @@
+.ProfileGroup {
+  margin-top: 16px;
+
+  &__right {
+    flex: auto;
+  }
+
+  &__rightTablet {
+    position: absolute;
+    left: 100%;
+    width: 0;
+    overflow: hidden;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .typography-h3 {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden !important;
+  }
+
+  &__aside {
+    max-width: 385px;
+    flex: auto;
+    flex-grow: 1;
+    padding: 24px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #E5EBFF;
+    box-shadow: -3px 7px 13px #F1F7FF;
+    border-radius: 14px;
+    min-width: auto;
+
+    .typography-h2 {
+      font-size: 24px;
+    }
+  }
+
+  &__asideTablet {
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    flex: auto;
+    border: none;
+    box-shadow: none;
+    max-width: none;
+  }
+
+  &__groups {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    .button {
+      min-width: 320px;
+    }
+
+    &_empty {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .typography-h3 {
+        font-weight: 400;
+      }
+    }
+
+    &_emptyTablet {
+      margin: 80px 0;
+    }
+  }
+
+  &__groupsTablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .buttonAdd{
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+}

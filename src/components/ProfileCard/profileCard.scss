@@ -1,0 +1,98 @@
+.profileCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+
+  &__header {
+    .avatar {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__profileBar {
+    .avatar {
+      width: 74px;
+      height: 74px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: 0.1s;
+      color: var(--secondary-color);
+
+      &:hover {
+        border-color: var(--secondary-color);
+        transition: 0.1s;
+      }
+    }
+
+    i {
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--primary-dark-color);
+      }
+    }
+  }
+
+  &__bonuses {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: var(--secondary-light-color);
+  }
+
+  &__menu {
+    width: 270px;
+    position: absolute;
+    background: #FFFFFF;
+    top: calc(100% + 8px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color-light);
+    box-shadow: 0 8px 14px rgba(18, 23, 93, 0.2);
+    border-radius: 10px;
+    padding: 4px 0 4px 16px;
+
+    &_item {
+      padding: 12px 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--border-color-light);
+      }
+    }
+
+    p {
+      color: #2C406E;
+      cursor: pointer;
+    }
+
+    p, button {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    button {
+      color: #2C406E;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      border: none;
+      background: none;
+    }
+  }
+}

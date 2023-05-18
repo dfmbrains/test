@@ -1,0 +1,29 @@
+.GroupCard {
+  padding: 16px 13px;
+  background: #FFFFFF;
+  border: 1px solid #E5EBFF;
+  border-radius: 14px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .typography-h6 {
+    font-weight: 500;
+  }
+
+  .button {
+    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+}

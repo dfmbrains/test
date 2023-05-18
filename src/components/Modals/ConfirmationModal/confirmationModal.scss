@@ -1,0 +1,42 @@
+.confirmationModal {
+  z-index: 250;
+
+  &__noLoyout {
+    max-width: 352px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .modal__title {
+    text-align: center !important;
+  }
+
+  &__btns {
+    margin-top: 36px;
+    display: flex;
+    column-gap: 12px;
+
+    .button {
+      width: calc(100% / 2 - 6px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .confirmationModal {
+    &__btns {
+      margin-top: 24px;
+      flex-direction: column;
+      gap: 5px 0;
+
+      .button {
+        width: 100%;
+
+        &:last-child {
+          border-color: transparent;
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}

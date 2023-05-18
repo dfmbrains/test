@@ -1,0 +1,116 @@
+.TextFieldLabel {
+  padding: 20px 12px;
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid var(--border-color-light);
+  min-width: 380px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    width: 24px;
+    max-height: 24px;
+  }
+
+  &:focus-within {
+    border-color: var(--secondary-color);
+    transition: 0.2s;
+  }
+
+  &:hover {
+    box-shadow: var(--box-shadow-type1);
+  }
+
+  &__activePlaceholder {
+    padding: 12px;
+  }
+
+  &__placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+  }
+
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondary-color);
+  }
+
+  input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--secondary-color);
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+
+  input[type='checkbox'] {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    border-radius: 4px;
+  }
+
+  &__tablet {
+    box-shadow: var(--box-shadow-type1);
+    min-width: 0;
+    width: 100%;
+  }
+
+  &__mobile {
+    padding: 12px 16px;
+    box-shadow: var(--box-shadow-type1);
+    min-width: 0;
+  }
+
+  &__checkbox {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    gap: 9px;
+    flex-flow: row-reverse wrap;
+
+    .typography-body1 {
+      margin: 0;
+      opacity: 0.5;
+    }
+  }
+
+  &__date {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 525px) {
+  .TextFieldLabel {
+    &__checkbox {
+      box-shadow: none;
+      border: none;
+      display: flex;
+
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+    }
+  }
+}

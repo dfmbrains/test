@@ -1,0 +1,17 @@
+.applicationModal {
+  &__img {
+    width: 100px;
+    display: block;
+    margin: 40px auto;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: var(--secondary-light-color);
+    margin-top: 14px;
+    margin-bottom: 32px;
+  }
+}

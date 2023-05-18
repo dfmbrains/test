@@ -1,0 +1,14 @@
+.qrCode {
+  background: #FFFFFF;
+  border: 3px solid #5ACB3D;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
